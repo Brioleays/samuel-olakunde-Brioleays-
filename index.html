@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samuel Olakunde | Frontend Developer</title>
+  <title>Samuel Olakunde | Frontend Developer & UI Architect</title>
+  <meta name="description" content="Frontend Developer specializing in functional dashboards, business tools, and scalable web interfaces.">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -19,32 +20,42 @@
       }
     }
   </script>
+  <style>
+    .project-card:hover {
+      box-shadow: 0 0 20px rgba(249, 115, 22, 0.1);
+    }
+  </style>
 </head>
 <body class="bg-brandBlack text-white font-sans selection:bg-brandOrange selection:text-black">
 
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-    <img src="./assets/my logo-02.png" alt="Logo" class="h-20 w-auto mb-6"/>
+  <header class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <img src="./assets/my logo-02.png" alt="Samuel Olakunde Logo" class="h-20 w-auto mb-6" loading="eager"/>
     <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
       Samuel <span class="text-brandOrange">Olakunde</span>
     </h1>
 
-    <p class="max-w-2xl text-gray-400 mb-8 text-lg md:text-xl leading-relaxed">
-      Frontend Developer & Graphic Designer building functional dashboards and clean web interfaces — turning complex requirements into practical digital solutions.
+    <p class="max-w-2xl text-gray-400 mb-6 text-lg md:text-xl leading-relaxed">
+      Frontend Developer focused on building scalable dashboards, business tools, and data-driven interfaces. 
+      I combine design precision with functional logic to deliver solutions that are both intuitive and practical.
+    </p>
+    
+    <p class="text-sm text-gray-500 mb-8 font-mono tracking-wide uppercase">
+      Expanding into backend systems & API integrations
     </p>
 
-    <div class="flex gap-4">
+    <div class="flex flex-wrap justify-center gap-4">
       <a href="#projects"
-         class="bg-brandOrange text-black px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform">
-        View My Work
+         class="bg-brandOrange text-black px-8 py-3 rounded-xl font-bold hover:scale-105 transition-all shadow-lg shadow-brandOrange/20">
+        View Selected Work
       </a>
       <a href="https://github.com/Brioleays" target="_blank"
-         class="border border-neutral-700 px-8 py-3 rounded-xl hover:bg-white hover:text-black transition">
+         class="border border-neutral-700 px-8 py-3 rounded-xl hover:bg-white hover:text-black transition-all">
         GitHub
       </a>
     </div>
-  </section>
+  </header>
 
-  <section id="projects" class="px-6 py-24 max-w-6xl mx-auto">
+  <main id="projects" class="px-6 py-24 max-w-6xl mx-auto">
     <div class="mb-16">
       <h2 class="text-3xl font-bold mb-2">Selected Projects</h2>
       <div class="h-1 w-20 bg-brandOrange"></div>
@@ -52,11 +63,26 @@
 
     <div class="grid md:grid-cols-2 gap-8">
 
-      <div class="bg-neutral-900/50 rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition flex flex-col justify-between">
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">Arabic Smart Body Calculator</h3>
+          <p class="text-gray-400 mb-6">
+            A right-to-left (RTL) body calculation tool designed for Arabic users, featuring a responsive interface and backend architecture prepared for AI-powered health insights via OpenAI and Supabase.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
+            <span>RTL Design</span> • <span>OpenAI Prep</span> • <span>Supabase</span>
+          </div>
+        </div>
+        <a href="https://smart-body-calculator.netlify.app/" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          LIVE PREVIEW <span>→</span>
+        </a>
+      </article>
+
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
         <div>
           <h3 class="text-2xl font-bold mb-3">Etelf</h3>
           <p class="text-gray-400 mb-6">
-            A comprehensive legal platform featuring a landing page and dual-sided dashboards for users and administrators, specifically tailored for Elder Law.
+            A legal platform tailored for elder law services, featuring dedicated user and admin dashboards to streamline client management, case tracking, and access to legal resources.
           </p>
           <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
             <span>React</span> • <span>Tailwind CSS</span> • <span>Admin Dashboard</span>
@@ -65,13 +91,13 @@
         <a href="https://etelf.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
           LIVE PREVIEW <span>→</span>
         </a>
-      </div>
+      </article>
 
-      <div class="bg-neutral-900/50 rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition flex flex-col justify-between">
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
         <div>
           <h3 class="text-2xl font-bold mb-3">FGT (Realtors)</h3>
           <p class="text-gray-400 mb-6">
-            A real estate management portal including a modern landing page and functional dashboards for realtors and admin oversight.
+            A real estate management platform designed to help realtors manage property listings efficiently while giving administrators structured control over platform data and user activity.
           </p>
           <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
             <span>HTML/CSS</span> • <span>Tailwind</span> • <span>User Portal</span>
@@ -80,13 +106,13 @@
         <a href="https://fgtmain.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
           LIVE PREVIEW <span>→</span>
         </a>
-      </div>
+      </article>
 
-      <div class="bg-neutral-900/50 rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition flex flex-col justify-between">
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
         <div>
           <h3 class="text-2xl font-bold mb-3">Brightlec Solar Calc</h3>
           <p class="text-gray-400 mb-6">
-            A specialized standalone solar energy calculator built for an Austrian business to provide technical projections and cost estimates.
+            A custom-built solar energy calculator developed for business use, enabling users to estimate system requirements and cost projections through dynamic input-based calculations.
           </p>
           <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
             <span>JavaScript Logic</span> • <span>Business Tool</span>
@@ -95,13 +121,13 @@
         <a href="https://brightlec-calc.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
           LIVE PREVIEW <span>→</span>
         </a>
-      </div>
+      </article>
 
-      <div class="bg-neutral-900/50 rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition flex flex-col justify-between">
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
         <div>
           <h3 class="text-2xl font-bold mb-3">HelpingGreen</h3>
           <p class="text-gray-400 mb-6">
-            A subscription-based platform for fruit nutrition, featuring user dashboards and a clean interface for subscription management.
+            A subscription-based nutrition platform that provides structured fruit-based health plans, supported by a user dashboard for managing subscriptions and accessing personalized content.
           </p>
           <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
             <span>React</span> • <span>Subscription UI</span> • <span>UX Design</span>
@@ -110,31 +136,37 @@
         <a href="https://helpgreens.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
           LIVE PREVIEW <span>→</span>
         </a>
-      </div>
+      </article>
 
     </div>
-  </section>
+  </main>
 
   <section class="px-6 py-24 bg-neutral-950">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-3xl font-bold mb-8 text-center text-brandOrange">About Me</h2>
+      <h2 class="text-3xl font-bold mb-8 text-center text-brandOrange">Engineering & Design</h2>
       <p class="text-gray-300 text-lg leading-relaxed text-center">
-        I am a Frontend Developer with over two years of experience in Graphic Design. This dual background allows me to bridge the gap between aesthetics and code, ensuring that every dashboard or landing page I build is as visually balanced as it is technically sound. I thrive on building real-world tools that solve specific business needs.
+        I am a Frontend Developer with a strong foundation in graphic design, allowing me to approach development from both a structural and visual perspective. 
+        I specialize in building dashboards, platforms, and business-focused tools that translate complex requirements into clean, usable interfaces. 
+        My focus is on creating systems that are not just visually appealing, but functionally effective in real-world use cases.
       </p>
     </div>
   </section>
 
   <footer class="px-6 py-16 text-center border-t border-neutral-900">
-    <h3 class="text-xl font-semibold mb-6">Let's build something meaningful.</h3>
+    <h3 class="text-2xl font-bold mb-8">Have a project, dashboard, or platform in mind?</h3>
+    
+    <a href="mailto: brightfuturedev2025@gmail.com"
+       class="inline-block bg-brandOrange text-black px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform mb-12">
+      Hire Me
+    </a>
+
     <div class="flex flex-col md:flex-row justify-center gap-6 text-gray-400">
-      <a href="mailto:olakundesamuel30@gmail.com" class="hover:text-brandOrange transition">olakundesamuel30@gmail.com</a>
-      <span class="hidden md:block">|</span>
       <a href="mailto:brightfuturedev2025@gmail.com" class="hover:text-brandOrange transition">brightfuturedev2025@gmail.com</a>
       <span class="hidden md:block">|</span>
       <a href="https://github.com/Brioleays" target="_blank" class="hover:text-brandOrange transition">GitHub</a>
     </div>
     <p class="mt-12 text-sm text-neutral-600">
-      © 2026 Samuel Olakunde
+      © 2026 Samuel Olakunde • Lagos, Nigeria
     </p>
   </footer>
 
