@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samuel Olakunde | Frontend Developer</title>
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
@@ -21,108 +20,122 @@
     }
   </script>
 </head>
-<body class="bg-brandBlack text-white font-sans">
+<body class="bg-brandBlack text-white font-sans selection:bg-brandOrange selection:text-black">
 
-  <!-- HERO -->
   <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-    <img src="./assets/my logo-02.png" class="h-20 w-auto mb-6"/>
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+    <img src="./assets/my logo-02.png" alt="Logo" class="h-20 w-auto mb-6"/>
+    <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
       Samuel <span class="text-brandOrange">Olakunde</span>
     </h1>
 
-    <p class="max-w-xl text-gray-300 mb-8 text-lg">
-      Frontend developer building clean, practical web interfaces with React — learning by shipping real projects.
+    <p class="max-w-2xl text-gray-400 mb-8 text-lg md:text-xl leading-relaxed">
+      Frontend Developer & Graphic Designer building functional dashboards and clean web interfaces — turning complex requirements into practical digital solutions.
     </p>
 
     <div class="flex gap-4">
       <a href="#projects"
-         class="bg-brandOrange text-black px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition">
-        View Projects
+         class="bg-brandOrange text-black px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform">
+        View My Work
       </a>
       <a href="https://github.com/Brioleays" target="_blank"
-         class="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition">
+         class="border border-neutral-700 px-8 py-3 rounded-xl hover:bg-white hover:text-black transition">
         GitHub
       </a>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="px-6 py-20 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold mb-12 text-center">
-      Projects
-    </h2>
+  <section id="projects" class="px-6 py-24 max-w-6xl mx-auto">
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-2">Selected Projects</h2>
+      <div class="h-1 w-20 bg-brandOrange"></div>
+    </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-2 gap-8">
 
-      <!-- Project 1 -->
-      <div class="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 hover:border-brandOrange transition">
-        <h3 class="text-xl font-semibold mb-2">Recipe Web App</h3>
-        <p class="text-gray-400 mb-4">
-          A responsive recipe platform that helps users discover meals quickly.
-        </p>
-        <p class="text-sm text-gray-500 mb-4">
-          React · Tailwind CSS
-        </p>
-        <div class="flex gap-4">
-          <a href="#" class="text-brandOrange hover:underline">Live</a>
-          <a href="#" class="text-brandOrange hover:underline">Code</a>
+      <div class="bg-neutral-900/50 rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">Etelf</h3>
+          <p class="text-gray-400 mb-6">
+            A comprehensive legal platform featuring a landing page and dual-sided dashboards for users and administrators, specifically tailored for Elder Law.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
+            <span>React</span> • <span>Tailwind CSS</span> • <span>Admin Dashboard</span>
+          </div>
         </div>
+        <a href="https://etelf.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          LIVE PREVIEW <span>→</span>
+        </a>
       </div>
 
-      <!-- Project 2 -->
-      <div class="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 hover:border-brandOrange transition">
-        <h3 class="text-xl font-semibold mb-2">Church Website</h3>
-        <p class="text-gray-400 mb-4">
-          A modern church website focused on clarity, accessibility, and media content.
-        </p>
-        <p class="text-sm text-gray-500 mb-4">
-          HTML · Tailwind CSS
-        </p>
-        <div class="flex gap-4">
-          <a href="#" class="text-brandOrange hover:underline">Live</a>
-          <a href="#" class="text-brandOrange hover:underline">Code</a>
+      <div class="bg-neutral-900/50 rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">FGT (Realtors)</h3>
+          <p class="text-gray-400 mb-6">
+            A real estate management portal including a modern landing page and functional dashboards for realtors and admin oversight.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
+            <span>HTML/CSS</span> • <span>Tailwind</span> • <span>User Portal</span>
+          </div>
         </div>
+        <a href="https://fgtmain.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          LIVE PREVIEW <span>→</span>
+        </a>
       </div>
 
-      <!-- Project 3 -->
-      <div class="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 hover:border-brandOrange transition">
-        <h3 class="text-xl font-semibold mb-2">E-commerce UI</h3>
-        <p class="text-gray-400 mb-4">
-          A clean product interface with ratings, pricing, and carousel layout.
-        </p>
-        <p class="text-sm text-gray-500 mb-4">
-          React · Tailwind CSS
-        </p>
-        <div class="flex gap-4">
-          <a href="#" class="text-brandOrange hover:underline">Live</a>
-          <a href="#" class="text-brandOrange hover:underline">Code</a>
+      <div class="bg-neutral-900/50 rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">Brightlec Solar Calc</h3>
+          <p class="text-gray-400 mb-6">
+            A specialized standalone solar energy calculator built for an Austrian business to provide technical projections and cost estimates.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
+            <span>JavaScript Logic</span> • <span>Business Tool</span>
+          </div>
         </div>
+        <a href="https://brightlec-calc.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          LIVE PREVIEW <span>→</span>
+        </a>
+      </div>
+
+      <div class="bg-neutral-900/50 rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">HelpingGreen</h3>
+          <p class="text-gray-400 mb-6">
+            A subscription-based platform for fruit nutrition, featuring user dashboards and a clean interface for subscription management.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
+            <span>React</span> • <span>Subscription UI</span> • <span>UX Design</span>
+          </div>
+        </div>
+        <a href="https://helpgreens.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          LIVE PREVIEW <span>→</span>
+        </a>
       </div>
 
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="px-6 py-20 bg-neutral-950">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">About Me</h2>
-      <p class="text-gray-400 text-lg">
-        I’m a frontend developer focused on building practical, user-friendly interfaces.
-        I learn by building real projects and improving them iteratively.
+  <section class="px-6 py-24 bg-neutral-950">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center text-brandOrange">About Me</h2>
+      <p class="text-gray-300 text-lg leading-relaxed text-center">
+        I am a Frontend Developer with over two years of experience in Graphic Design. This dual background allows me to bridge the gap between aesthetics and code, ensuring that every dashboard or landing page I build is as visually balanced as it is technically sound. I thrive on building real-world tools that solve specific business needs.
       </p>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <footer class="px-6 py-12 text-center">
-    <p class="mb-4 text-gray-400">
-      Let’s build something meaningful.
-    </p>
-    <div class="flex justify-center gap-6">
-      <a href="https://github.com/Brioleays" target="_blank" class="hover:text-brandOrange">GitHub</a>
-      <a href="https://linkedin.com" target="_blank" class="hover:text-brandOrange">LinkedIn</a>
-      <a href="mailto:youremail@example.com" class="hover:text-brandOrange">Email</a>
+  <footer class="px-6 py-16 text-center border-t border-neutral-900">
+    <h3 class="text-xl font-semibold mb-6">Let's build something meaningful.</h3>
+    <div class="flex flex-col md:flex-row justify-center gap-6 text-gray-400">
+      <a href="mailto:olakundesamuel30@gmail.com" class="hover:text-brandOrange transition">olakundesamuel30@gmail.com</a>
+      <span class="hidden md:block">|</span>
+      <a href="mailto:brightfuturedev2025@gmail.com" class="hover:text-brandOrange transition">brightfuturedev2025@gmail.com</a>
+      <span class="hidden md:block">|</span>
+      <a href="https://github.com/Brioleays" target="_blank" class="hover:text-brandOrange transition">GitHub</a>
     </div>
+    <p class="mt-12 text-sm text-neutral-600">
+      © 2026 Samuel Olakunde
+    </p>
   </footer>
 
 </body>
