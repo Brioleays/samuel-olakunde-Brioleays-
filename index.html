@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samuel Olakunde | Frontend Developer & UI Architect</title>
-  <meta name="description" content="Frontend Developer specializing in functional dashboards, business tools, and scalable web interfaces.">
-
+  <title>Samuel Olakunde | Frontend Engineer & UI Architect</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
   <script>
     tailwind.config = {
       theme: {
@@ -22,56 +19,142 @@
   </script>
   <style>
     .project-card:hover {
-      box-shadow: 0 0 20px rgba(249, 115, 22, 0.1);
+      box-shadow: 0 0 25px rgba(249, 115, 22, 0.15);
     }
   </style>
 </head>
 <body class="bg-brandBlack text-white font-sans selection:bg-brandOrange selection:text-black">
 
   <header class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-    <img src="./assets/my logo-02.png" alt="Samuel Olakunde Logo" class="h-20 w-auto mb-6" loading="eager"/>
-    <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+    <img src="./assets/my logo-02.png" alt="Samuel Olakunde Logo" class="h-16 w-auto mb-6 opacity-90" loading="eager"/>
+    <h1 class="text-5xl md:text-8xl font-black mb-4 tracking-tighter">
       Samuel <span class="text-brandOrange">Olakunde</span>
     </h1>
 
-    <p class="max-w-2xl text-gray-400 mb-6 text-lg md:text-xl leading-relaxed">
-      Frontend Developer focused on building scalable dashboards, business tools, and data-driven interfaces. 
-      I combine design precision with functional logic to deliver solutions that are both intuitive and practical.
-    </p>
-    
-    <p class="text-sm text-gray-500 mb-8 font-mono tracking-wide uppercase">
-      Expanding into backend systems & API integrations
+    <p class="max-w-2xl text-gray-400 mb-8 text-lg md:text-2xl leading-relaxed font-light">
+      Frontend Engineer specializing in <span class="text-white font-medium">B2B Dashboards</span>, business logic tools, and scalable web interfaces.
     </p>
 
     <div class="flex flex-wrap justify-center gap-4">
       <a href="#projects"
-         class="bg-brandOrange text-black px-8 py-3 rounded-xl font-bold hover:scale-105 transition-all shadow-lg shadow-brandOrange/20">
+         class="bg-brandOrange text-black px-10 py-4 rounded-xl font-bold hover:scale-105 transition-all shadow-lg shadow-brandOrange/20">
         View Selected Work
       </a>
       <a href="https://github.com/Brioleays" target="_blank"
-         class="border border-neutral-700 px-8 py-3 rounded-xl hover:bg-white hover:text-black transition-all">
-        GitHub
+         class="border border-neutral-700 px-10 py-4 rounded-xl hover:bg-white hover:text-black transition-all font-semibold">
+        GitHub Profile
       </a>
     </div>
   </header>
 
   <main id="projects" class="px-6 py-24 max-w-6xl mx-auto">
     <div class="mb-16">
-      <h2 class="text-3xl font-bold mb-2">Selected Projects</h2>
-      <div class="h-1 w-20 bg-brandOrange"></div>
+      <h2 class="text-4xl font-black mb-2 uppercase tracking-tight">Case Studies</h2>
+      <div class="h-1.5 w-24 bg-brandOrange"></div>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-2 gap-10">
 
-      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-2xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-3xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
         <div>
           <h3 class="text-2xl font-bold mb-3">Arabic Smart Body Calculator</h3>
-          <p class="text-gray-400 mb-6">
-            A right-to-left (RTL) body calculation tool designed for Arabic users, featuring a responsive interface and backend architecture prepared for AI-powered health insights via OpenAI and Supabase.
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            Engineered a specialized health tool with **Right-to-Left (RTL)** layout logic and AI-integrated backend architecture via OpenAI and Supabase.
           </p>
-          <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono text-brandOrange uppercase tracking-widest">
-            <span>RTL Design</span> • <span>OpenAI Prep</span> • <span>Supabase</span>
+          <div class="flex flex-wrap gap-2 mb-8 text-[10px] font-mono text-brandOrange font-bold uppercase tracking-widest">
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">RTL Architecture</span>
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">AI Integration</span>
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">Supabase Logic</span>
           </div>
+        </div>
+        <a href="https://smart-body-calculator.netlify.app/" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          EXPLORE SYSTEM <span>→</span>
+        </a>
+      </article>
+
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-3xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">Etelf Legal Portal</h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            A **B2B SaaS interface** for legal management. Built with complex role-based access for Admin dashboards and client case tracking.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8 text-[10px] font-mono text-brandOrange font-bold uppercase tracking-widest">
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">B2B SaaS UI</span>
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">RBAC Logic</span>
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">Admin Dashboard</span>
+          </div>
+        </div>
+        <a href="https://etelf.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          EXPLORE SYSTEM <span>→</span>
+        </a>
+      </article>
+
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-3xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">FGT Realtor Hub</h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            Real estate CRM optimized for inventory management and structured data control across multiple user roles.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8 text-[10px] font-mono text-brandOrange font-bold uppercase tracking-widest">
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">CRM Interface</span>
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">Data Workflows</span>
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">User Portal</span>
+          </div>
+        </div>
+        <a href="https://fgtmain.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          EXPLORE SYSTEM <span>→</span>
+        </a>
+      </article>
+
+      <article class="project-card bg-neutral-900/40 backdrop-blur-sm rounded-3xl p-8 border border-neutral-800 hover:border-brandOrange/50 transition-all flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">Brightlec Solar Estimator</h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            Business intelligence tool utilizing custom math algorithms to estimate electrical requirements and project costs.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8 text-[10px] font-mono text-brandOrange font-bold uppercase tracking-widest">
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">Algorithm Design</span>
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">Business Logic</span>
+            <span class="bg-brandOrange/10 px-3 py-1 rounded">Dynamic UI</span>
+          </div>
+        </div>
+        <a href="https://brightlec-calc.netlify.app" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          EXPLORE SYSTEM <span>→</span>
+        </a>
+      </article>
+
+    </div>
+  </main>
+
+  <section class="px-6 py-24 bg-neutral-950 border-y border-neutral-900">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-brandOrange">Design Logic & Systems Engineering</h2>
+      <p class="text-gray-300 text-lg md:text-xl leading-relaxed">
+        I bridge the gap between design precision and software engineering. I specialize in building dashboards and business-focused tools that translate complex requirements into clean, high-performance interfaces.
+      </p>
+    </div>
+  </section>
+
+  <footer class="px-6 py-24 text-center">
+    <h3 class="text-3xl font-bold mb-10 tracking-tight">Have a project or platform in mind?</h3>
+    
+    <a href="mailto:samuelolakunde.dev@gmail.com"
+       class="inline-block bg-brandOrange text-black px-12 py-5 rounded-xl font-bold hover:scale-105 transition-all mb-16 shadow-2xl shadow-brandOrange/20">
+      Hire Me
+    </a>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-gray-500 font-bold uppercase tracking-widest text-xs">
+      <a href="mailto:samuelolakunde.dev@gmail.com" class="hover:text-brandOrange transition">Email</a>
+      <span class="hidden md:block text-neutral-800">|</span>
+      <a href="https://github.com/Brioleays" target="_blank" class="hover:text-brandOrange transition">GitHub</a>
+    </div>
+    <p class="mt-20 text-[10px] text-neutral-600 tracking-[0.5em] uppercase">
+      © 2026 Samuel Olakunde • Lagos, Nigeria
+    </p>
+  </footer>
+
+</body>
+</html>
         </div>
         <a href="https://smart-body-calculator.netlify.app/" target="_blank" class="text-sm font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
           LIVE PREVIEW <span>→</span>
